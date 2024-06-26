@@ -1,0 +1,77 @@
+name: 🐛 Bug Report
+description: Report a bug.
+labels: ["bug", "unconfirmed"]
+assignees:
+  - jrriehl
+  - qati
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! We appreciate your contribution to improving our products.
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm before submitting any new bug report.
+      options:
+        - label: I checked the [documentation](https://fetch.ai/docs) and found no answer to my problem
+          required: true
+        - label: I checked the [existing issues](https://github.com/fetchai/agentverse_public/issues) and made sure there are no similar bug reports
+          required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the category that best describes the bug.
+      options:
+        - Bug in Agentverse
+        - Bug in DeltaV
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Describe the behavior you are expecting.
+    validations:
+      required: false
+  - type: textarea
+    id: actual
+    attributes:
+      label: Observed Behavior
+      description: Describe the behavior you are observing.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: To Reproduce
+      description: Provide steps to reproduce the issue.
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details (Optional)
+      description: Provide any relevant information about your environment, such as your operating system, your browser and its version, session id (if this is related to DeltaV - this can be found in the first line of the Developer mode panel) and any other useful detail.
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Failure Logs (Optional)
+      description: Include any relevant log snippets or files here. You can paste directly or drag and drop files into this area.
+      render: shell
+    validations:
+        required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information (Optional)
+      description: Include any screenshots, code snippets, or other relevant details that might help us understand the bug.
+      render: markdown
+    validations:
+      required: false
