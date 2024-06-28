@@ -7,9 +7,6 @@ Contributions to this repository are welcome. As a contributor, here are the gui
 - [Issues and Bugs](#issue)
 - [Feature Requests](#feature)
 - [Submission Guidelines](#submit)
-- [Coding Rules](#rules)
-- [Commit Message Convention](#commit)
-- [Merging Pull Requests](#merge)
 
 ## <a name="coc"></a> Code of Conduct
 
